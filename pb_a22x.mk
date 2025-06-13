@@ -9,14 +9,17 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common twrp stuff.
-$(call inherit-product, vendor/pb/config/common.mk)
+# Inherit from TWRP common configuration
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# SHRP settings
+$(call inherit-product-if-exists, device/samsung/a22x/shrp_a22x.mk)
 
 # Inherit from a22x device
 $(call inherit-product, device/samsung/a22x/device.mk)
 
 PRODUCT_DEVICE := a22x
-PRODUCT_NAME := pb_a22x
+PRODUCT_NAME := twrp_a22x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A226B
 PRODUCT_MANUFACTURER := samsung
