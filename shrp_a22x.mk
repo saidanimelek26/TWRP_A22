@@ -1,6 +1,6 @@
 SHRP_DEVICE_CODE := a22x
 SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE)
-SHRP_MAINTAINER := melek saidani
+SHRP_MAINTAINER := meleksaidani
 SHRP_REC_TYPE := SAR
 SHRP_DEVICE_TYPE := A/B
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
